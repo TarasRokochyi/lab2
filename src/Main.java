@@ -71,12 +71,14 @@ public class Main {
                         int b = Integer.parseInt(scan.nextLine());
                         int c = Integer.parseInt(scan.nextLine());
                         if ( a == b && b == c){
-                            S
+
                         }
                         if ((a + b) < c || (a + c) < b || (c + b) < a){
                             System.out.println("Такого трикутника не існує");
                         }
-                        if
+                        if(a == 0){
+
+                        }
                     } else if (text.equals("q")) {
                         break;
                     }
