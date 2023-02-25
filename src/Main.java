@@ -54,6 +54,9 @@ public class Main {
                         else{
                             System.out.println("x: " + x + "  y: " + y);
                         }
+
+
+
                     }
                     else if (text.equals("q")) {
                         break;
