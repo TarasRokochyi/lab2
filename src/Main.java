@@ -144,7 +144,17 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int age = Integer.parseInt(scan.nextLine());
+                        int q = age % 10;
+                        if (q == 1){
+                            System.out.println(age + " рік");
+                        }
+                        else if (q > 1 && q < 5){
+                            System.out.println(age + " роки");
+                        }
+                        else{
+                            System.out.println(age + " років");
+                        }
                     }
                     else if (text.equals("q")) {
                         break;
