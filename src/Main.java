@@ -59,9 +59,6 @@ public class Main {
                         else{
                             System.out.println("x: " + x + "  y: " + y);
                         }
-
-
-
                     }
                     else if (text.equals("q")) {
                         break;
@@ -96,34 +93,52 @@ public class Main {
                     }
                 }
             }
-            else if(text.equals("4")){
-                System.out.println("Go or q");
-                text = scan.nextLine();
-                if (text.equals("go")){
-
-                }
-                else if (text.equals("q")){
-                    break;
+            else if(text.equals("4")) {
+                while(true) {
+                    System.out.println("Go or q");
+                    text = scan.nextLine();
+                    if (text.equals("go")) {
+                        double number = Integer.parseInt(scan.nextLine());
+                        double[] arr = new double[4];
+                        for (int i = 0; i < 4; i++) {
+                            double p = Math.round(((number / 10) - (Math.floor(number / 10))) * 10);
+                            arr[i] = p;
+                            number = Math.floor(number / 10);
+                        }
+                        if((arr[0] == arr[3]) && (arr[1] == arr[2])){
+                            System.out.println("Паліндром");
+                        }
+                        else{
+                            System.out.println("Не паліндром");
+                        }
+                    }
+                    else if (text.equals("q")) {
+                        break;
+                    }
                 }
             }
             else if(text.equals("5")){
-                System.out.println("Go or q");
-                text = scan.nextLine();
-                if (text.equals("go")){
+                while(true) {
+                    System.out.println("Go or q");
+                    text = scan.nextLine();
+                    if (text.equals("go")) {
 
-                }
-                else if (text.equals("q")){
-                    break;
+                    }
+                    else if (text.equals("q")) {
+                        break;
+                    }
                 }
             }
             else if(text.equals("6")){
-                System.out.println("Go or q");
-                text = scan.nextLine();
-                if (text.equals("go")){
+                while (true) {
+                    System.out.println("Go or q");
+                    text = scan.nextLine();
+                    if (text.equals("go")) {
 
-                }
-                else if (text.equals("q")){
-                    break;
+                    }
+                    else if (text.equals("q")) {
+                        break;
+                    }
                 }
             }
             else if(text.equals("q")){
