@@ -122,7 +122,17 @@ public class Main {
                     System.out.println("Go or q");
                     text = scan.nextLine();
                     if (text.equals("go")) {
-
+                        int month = Integer.parseInt(scan.nextLine());
+                        int l = month % 2;
+                        if (month == 2){
+                            System.out.println("28");
+                        }
+                        else if ((l == 1 && month < 8) || (l == 0 && month > 7)){
+                            System.out.println("31");
+                        }
+                        else{
+                            System.out.println("30");
+                        }
                     }
                     else if (text.equals("q")) {
                         break;
